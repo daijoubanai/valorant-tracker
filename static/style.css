@@ -1,0 +1,156 @@
+body
+{
+    background-color: #111111;
+    text-align: center;
+    color: bisque;
+}
+
+.scrollable-element
+{
+    scrollbar-color: black grey;
+}
+
+#topBar
+{
+    text-align: center;
+    background-image: url("bannerTopLong.png");
+    background-position: center;
+    height: 100px;
+    width: 100%;
+}
+
+#mainArea
+{
+    background-color: rgb(122, 76, 70);
+    height: 500px;
+    color: #d8cdcd;
+    background-image: url("bannerRight2s.png");
+    background-position: left, right;
+
+}
+
+#mainCenter
+{
+    width: 900px;
+    align-self: center;
+    background-color: #0F1922;
+    position: relative;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#mainData
+{
+    position: relative;
+    background-color: #3f476b;
+    width: 490px;
+    height: 500px;
+    float: left;
+}
+
+#mainResults
+{
+    position: relative;
+    background-color: #64524b;
+    width: 400px;
+    height: 500px;
+    float: right;
+    visibility: visible;
+}
+
+#competitive
+{
+    height: 120px;
+}
+
+#unrated
+{
+    height: 120px;
+}
+
+#spikeRush
+{
+    height: 120px;
+}
+
+.button
+{
+    background-color: #262755;
+    border: none;
+    color: rgb(34, 34, 34);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #c5c5c5
+}
+
+.data_panel_btn
+{
+    position: relative;
+    display: inline-block;
+    color: #db9a9a
+
+}
+
+.panel_container
+{
+    position: absolute;
+}
+
+#topLayer
+{
+    background-color: #d8cdcd;
+    height: 100%;
+    visibility: visible;
+    color:#555555;
+}
+
+/* popup */
+.popupMain
+{
+    /*background-color: #111111;*/
+    cursor: pointer;
+    display: none;
+    /*height: 100%;*/
+    position: fixed;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    width: 50%;
+    z-index: 10000;
+
+}
+
+.popupMain .helper
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.popupMain > div
+{
+    background-color: #7a6565;
+    box-shadow: 10px 10px 60px #555555;
+    display: inline-block;
+    height: auto;
+    width: 350px;
+    height: 400px;
+    vertical-align: middle;
+    /*width: 60%;*/
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+
+.selectMenu
+{
+    background-color: #db9a9a;
+    padding: 3px 3px 3px 3px;
+    margin: 8px 10px 8px 10px;
+}
