@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+        <!-- style and script goes in static folder -->
+        <link rel="shortcut icon" href="#"> <!-- remove console error -->
+
+    </head>
+    <body>
+        
+        <div id="topBar">
+        </div>
+
+        <div id="mainArea">
+
+            <div id="mainCenter">
+                <div id="mainData">
+                    
+                    <div id="competitive"><h2>1</h2>
+                        
+                        <button class="data_panel_btn" id="js-trigger" data-panel="main">info</button>
+                        <br /><br />
+                        <button class="data_panel_btn" id="insert-data-popup">add data</button>
+                        <br /><br />
+                        <button class="data_panel_btn" id="get-from-db">competitive</button>
+                        <br />
+
+                        
+                    </div>
+
+                    <div id="unrated"><h2>2</h2>
+
+                        <button class="data_panel_btn" id="get-wr">get wr</button>
+
+                    </div>
+
+                    <div id="spikeRush"><h2>3</h2>
+                    
+                    </div>
+                </div>
+
+                <div id="mainResults">
+
+                    <div class="panel_main panel_from_left js_panel_main">
+
+                        <div class="panel_container">
+                            <div class="panel_content">
+                                <h2>Overview</h2>
+        
+                                <p>Competitive</p>
+                                <span id="compWR"></span>
+                                <p>Unrated</p>
+                                <span id="unrWR"></span>
+                                <p>Spike Rush</p> 
+                                <span id="srWR"></span>  
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="topLayer">
+                        asdf
+                        <p id="topText"></p>
+                    </div>
+
+                    <div class="popupMain" id="dataPopup" style="display: none;">
+                        <span class="helper"></span>
+                        <div>
+                            game type 
+                            <select class="selectMenu" id="gameType">
+                                <option value="competitive">Competitive</option>
+                                <option value="unrated">Unrated</option>
+                                <option value="spikeRush">Spike Rush</option>
+                            </select> 
+                            <br />
+                            result
+                            <select class="selectMenu" id="result">
+                                <option value="win">Win</option>
+                                <option value="loss">Loss</option>
+                            </select>
+                            <br />
+                            map 
+                            <select class="selectMenu" id="map">
+                                <option value="bind">Bind</option>
+                                <option value="split">Split</option>
+                                <option value="haven">Haven</option>
+                                <option value="ascent">Ascent</option>
+                                <option value="icebox">Ice Box</option>
+                            </select>
+                            <br />
+                            agent
+                            <select class="selectMenu" id="agent">
+                                <option value="breach">Breach</option>
+                                <option value="brimstone">Brimstone</option>
+                                <option value="cypher">Cypher</option>
+                                <option value="jett">Jett</option>
+                                <option value="killjoy">Killjoy</option>
+                                <option value="omen">Omen</option>
+                                <option value="phoenix">Phoenix</option>
+                                <option value="raze">raze</option>
+                                <option value="reyna">Reyna</option>
+                                <option value="sage">Sage</option>
+                                <option value="skye">Skye</option>
+                                <option value="sova">Sova</option>
+                                <option value="viper">Viper</option>
+                                <option value="yoru">Yoru</option>
+                            </select>
+                            <br />
+                            headshot percent
+                            <input type="text" id="hs">
+                            <br />
+                            ADR
+                            <input type="text" id="adr">
+                            <br />
+                            combat score
+                            <input type="text" id="combatScore">
+                            <br /><br />
+                            <button class="data_panel_btn" id="submit-data">submit</button>
+
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+</html>
